@@ -40,7 +40,6 @@ body{
   margin-bottom: 15px;
   position: relative;
 }
-
 .wrapper form .row input{
   height: 100%;
   width: 100%;
@@ -54,9 +53,7 @@ body{
   color: #fff;
  
 }
-.form-log{
-  font-style: italic;
-}
+
 form .row input:focus{
   border-color: #16a085;
   box-shadow: inset 0px 0px 2px 2px rgba(26,188,156,0.25);
@@ -65,31 +62,7 @@ form .row input::placeholder{
   color: #999;
   font-style: italic;
 }
-.wrapper form .row i{
-  position: absolute;
-  width: 47px;
-  height: 100%;
-  color: #fff;
-  font-size: 18px;
-  background: #16a085;
-  border: 1px solid #16a085;
-  border-radius: 5px 0 0 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.wrapper form .pass{
-  margin: -8px 0 20px 0;
-}
-.wrapper form .pass a{
-  color: #548687;
-  font-weight: bold;
-  font-size: 17px;
-  text-decoration: none;
-}
-.wrapper form .pass a:hover{
-  text-decoration: underline;
-}
+
 .wrapper form .button input{
   color: #fff;
   font-size: 20px;
@@ -97,21 +70,6 @@ form .row input::placeholder{
   padding-left: 0px;
   background: #6DA34D;
   cursor: pointer;
-}
-form .button input:hover{
-  background: #12876f;
-}
-.wrapper form .signup-link{
-  text-align: center;
-  margin-top: 20px;
-  font-size: 17px;
-}
-.wrapper form .signup-link a{
-  color: #16a085;
-  text-decoration: none;
-}
-form .signup-link a:hover{
-  text-decoration: underline;
 }
 
 .extra-buttons-container{
@@ -121,9 +79,9 @@ form .signup-link a:hover{
 }
 
 .p-extra-buttons-container{
-  margin-top: 0.5em;
+  margin-top: 1em;
   color: #8D9392;
-  font-size: 1.25em;
+  font-size: 1.15em;
   font-weight: bold;
   text-align: center;
 }
@@ -136,7 +94,6 @@ form .signup-link a:hover{
   padding-left: 0px;
   background: #6DA34D;
   cursor: pointer;
-  border-radius: 5px;
   border-radius: 5px;
   border: 0.25px solid #282727;
 }
@@ -151,8 +108,57 @@ form .signup-link a:hover{
   font-weight: bolder;
   background: #D9D9D9;
   overflow: hidden;
-  padding: 30px;
+  padding: 20px;
   border-radius: 10px 10px 0px 0px;
 }
+
+.checkbox-container{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1em;
+ 
+
+  
+}
+
+input[type="checkbox"]{
+  appearance: none;
+  background-color: #282727;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid #D9D9D9;
+  border-radius: 0.15em;
+}
+
+input[type="checkbox"]::before{
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(#D9D9D9);
+}
+
+input[type="checkbox"]:checked{
+  transform: scale(1);
+  background-color: #D9D9D9;
+}
+
+.p-checkbox-container{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.p-checkbox{
+  color: #8D9392;
+  font-size: 1.15em;
+  font-weight: bold;
+  text-align: center;
+}
+
 
 

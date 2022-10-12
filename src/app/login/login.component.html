@@ -12,7 +12,8 @@
 
 <body>
 
-
+<app-up-menu></app-up-menu>
+<div class="down-box">© App for buying videogames</div>
 
   <div class="container">
     <div class="wrapper">
@@ -27,12 +28,15 @@
         </div>
         <div class="pass"><a href="#">Forgot password?</a></div>
         <div class="row button">
-          <input type="submit" value="Login">
+          <input type="submit" value="Login" routerLink="/startMenu">
         </div> 
         <div class="extra-buttons-container">
           <p class="p-extra-buttons-container">No account?</p>
-
-          <input class="extra-buttons" type="submit" value="Sign Up">
+          <input class="extra-buttons" type="submit" routerLink="/signIn"  value="Sign In">
+        </div>
+        <div class="extra-buttons-container">
+          <p class="p-extra-buttons-container">Any problem?</p>
+          <input class="extra-buttons" type="submit" routerLink="/contact" value="Contact">
         </div>
       </form>
     </div>

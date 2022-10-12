@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <title>Login Form | CodingLab</title> -->
+  <link rel="stylesheet" href="sign-in.component.scss">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+
+<body>
+
+  <div class="down-box">© App for buying videogames. <br>We Won't use any of your personal Data</div>
+  <app-up-menu></app-up-menu>
+  <div class="container">
+    <div class="wrapper">
+      <div class="title"><span>Sign In Form</span></div>
+      <form action="#">
+        <div class="row">
+          <input type="text" placeholder="Full name" required>
+        </div>
+        <div class="row">
+          <input type="number" placeholder="Age" required>
+        </div>
+        <div class="row">
+            <input type="text" placeholder="Email" required>
+          </div>
+          <div class="row">
+            <input type="password" placeholder="Password" required>
+          </div>
+        <div class="row button">
+          <input type="submit" value="Sign In" routerLink="/startMenu">
+        </div> 
+        <div class="checkbox-container">
+          <input type="checkbox"  required>
+          <input type="checkbox">
+        </div>
+        <div class="p-checkbox-container">
+          <p class="p-checkbox">Accept terms of service*</p>
+          <p class="p-checkbox">Accept advertisements</p>
+        </div>
+        <div class="extra-buttons-container">
+          <p class="p-extra-buttons-container">Already Logged?</p>
+          <input class="extra-buttons" routerLink="/login" type="submit" value="Login">
+        </div>
+        <div class="extra-buttons-container">
+          <p class="p-extra-buttons-container">Any problem?</p>
+          <input class="extra-buttons"  routerLink="/contact" type="submit" value="Contact">
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>

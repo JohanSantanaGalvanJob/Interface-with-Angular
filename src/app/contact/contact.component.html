@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.component.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <app-up-menu></app-up-menu>
+    
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="title"><span>Contact Form</span></div>
+            <form action="#">
+                <div class="row">
+                    <input type="text" placeholder="Email" required>
+                </div>
+                <div class="row">
+                    <input type="number" placeholder="Phone Number" required>
+                </div>
+                    <textarea class="text-area" type="text" placeholder="Write here your problem with the app" required></textarea>
+                <div class="row button">
+                    <input type="submit" value="Send Message" routerLink="/startMenu">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
