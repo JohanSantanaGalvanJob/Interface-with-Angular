@@ -17,21 +17,21 @@
   <div class="container">
     <div class="wrapper">
       <div class="title"><span>Sign In Form</span></div>
-      <form action="#">
+      <form [formGroup]="signInForm" (ngSubmit)="signInUser()">
         <div class="row">
-          <input type="text" placeholder="Full name" required>
+          <input type="text" placeholder="Full name" formControlName="name">
         </div>
         <div class="row">
-          <input type="number" placeholder="Age" required>
+          <input type="number" placeholder="Age" formControlName="age" required>
         </div>
         <div class="row">
-            <input type="text" placeholder="Email" required>
+            <input type="text" placeholder="Email" formControlName="email" required>
           </div>
           <div class="row">
-            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Password" formControlName="password" required>
           </div>
         <div class="row button">
-          <input type="submit" value="Sign In" routerLink="/startMenu">
+          <input type="submit" value="Sign In" [disabled]="signInForm.invalid" routerLink="/startMenu">
         </div> 
         <div class="checkbox-container">
           <input type="checkbox"  required>

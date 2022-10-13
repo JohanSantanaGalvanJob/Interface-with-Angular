@@ -1,15 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule } from '@angular/material/card';
-import { MatButtonModule } from '@angular/material/button';
-import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component'
-import { MatIconModule } from '@angular/material/icon';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { ContactComponent } from './contact/contact.component';
 import { UpMenuComponent } from './up-menu/up-menu.component';
@@ -20,7 +16,10 @@ import { DownMenuUnloggedComponent } from './down-menu-unlogged/down-menu-unlogg
 import { GameInfoComponent } from './game-info/game-info.component';
 import { SearchMenuComponent } from './search-menu/search-menu.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { GameInfoSearchComponent } from './game-info-search/game-info-search.component';
+import { HttpClientModule} from '@angular/common/http';
 
+import { GameInfoService } from './services/game-info.service';
 
 @NgModule({
   declarations: [
@@ -35,19 +34,18 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     DownMenuUnloggedComponent,
     GameInfoComponent,
     SearchMenuComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    GameInfoSearchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule,
-    MatCardModule,
-    MatInputModule,
     ReactiveFormsModule,
-    MatIconModule
+    HttpClientModule,
+    Ng2SearchPipeModule
   ],
-  providers: [],
+  providers: [GameInfoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

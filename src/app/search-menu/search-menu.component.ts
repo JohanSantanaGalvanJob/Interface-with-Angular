@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-menu.component.scss']
 })
 export class SearchMenuComponent implements OnInit {
-
+  search!:string;
   constructor() { }
 
   ngOnInit(): void {

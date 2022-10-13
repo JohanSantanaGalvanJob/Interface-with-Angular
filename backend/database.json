@@ -1,0 +1,35 @@
+{
+    "gameInfo": [{
+        "id": 1,
+        "title": "The Witcher 3 Wild Hunt",
+        "image": "https://image.api.playstation.com/vulcan/img/rnd/202009/2913/TQKAd8U6hnIFQIIcz6qnFh8C.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..."
+    }, {
+        "id": 2,
+        "title": "Final Fantasy XV",
+        "image": "https://image.api.playstation.com/cdn/EP0082/CUSA01615_00/XNsomzrSk6U0TUWod52DBjupDX4SVy4E.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..."
+    }, {
+        "id": 3,
+        "title": "NieR:Autómata",
+        "image": "https://image.api.playstation.com/cdn/EP0082/CUSA04480_00/P4ZghxHW2EEiwxim3ZZIG28aJB8LgebN.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..."
+    }, {
+        "id": 4,
+        "title": "Sonic Mania",
+        "image": "https://media.vandal.net/m/40708/sonic-mania-2017815115915_6.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..."
+    }],
+
+    "gameInfoSearch": [{
+        "id": 1,
+        "title": "Games Of the Month",
+        "image": "https://as01.epimg.net/meristation/imagenes/2021/08/24/noticias/1629823415_799751_1629826644_noticia_normal.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..."
+    }, {
+        "id": 2,
+        "title": "Personal Selection",
+        "image": "https://deluxe.news/wp-content/uploads/2022/03/10-Best-Open-World-Games.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..."
+    }]
+}

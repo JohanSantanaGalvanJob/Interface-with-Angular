@@ -10,6 +10,10 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms'
 export class LoginComponent implements OnInit {
 
   hide: boolean = false;
+  loginForm: FormGroup = this.fb.group({
+    email: ['', [Validators.required, Validators.email]],
+    password: ['', [Validators.required, Validators.minLength(6)]]
+  })
 
   constructor(private fb: FormBuilder) {
   }
@@ -17,17 +21,18 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
-  loginForm: FormGroup = this.fb.group({
-    email: ['', [Validators.required, Validators.email]],
-    password: ['', [Validators.required, Validators.minLength(6)]]
-  })
+  
 
+  loginUser(){
+    console.warn(this.loginForm.value)
+  }
 
-  onLogin() {
-    if (!this.loginForm.valid) {
-      return;
-    }
-    console.log(this.loginForm.value);
+  get email(){
+    return this.loginForm.get('email');
+  }
+
+  get password(){
+    return this.loginForm.get('password');
   }
 
 }

@@ -87,6 +87,13 @@ form .row input::placeholder{
   font-size: 17px;
   text-decoration: none;
 }
+
+.error{
+  color: red;
+  font-weight: bold;
+  margin-left: 5em;
+  font-size: 17px;
+}
 .wrapper form .pass a:hover{
   text-decoration: underline;
 }
@@ -97,21 +104,6 @@ form .row input::placeholder{
   padding-left: 0px;
   background: #6DA34D;
   cursor: pointer;
-}
-form .button input:hover{
-  background: #12876f;
-}
-.wrapper form .signup-link{
-  text-align: center;
-  margin-top: 20px;
-  font-size: 17px;
-}
-.wrapper form .signup-link a{
-  color: #16a085;
-  text-decoration: none;
-}
-form .signup-link a:hover{
-  text-decoration: underline;
 }
 
 .extra-buttons-container{

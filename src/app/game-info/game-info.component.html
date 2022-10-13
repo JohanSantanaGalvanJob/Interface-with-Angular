@@ -1,11 +1,17 @@
-<div class="container">
-    <img class="image" src="https://image.api.playstation.com/vulcan/img/rnd/202009/2913/TQKAd8U6hnIFQIIcz6qnFh8C.png">
+<div *ngFor="let game of Games">
 
-    <div class="information">
-        <h3 class="title">The Witcher 3 Wild Hunt</h3>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...</p>
+    <div class="container">
+
+        <img class="image" src={{game.image}}>
+
+
+        <div class="information">
+            <h3 class="title">{{game.title}}</h3>
+            <p class="text">{{game.description}}</p>
+        </div>
+
     </div>
-  
-</div>
 
-<div class="line"></div>
+    <div class="line"></div>
+
+</div>
